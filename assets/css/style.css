@@ -12,9 +12,9 @@
 body {
     
     color: var(--black);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-/* header style */
+/* HEADER SECTION STYLE */
 
 header {
     padding: 20px 35px;
@@ -27,23 +27,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
-    color: var(--white);
+    border-bottom: 2px solid;
+   
   }
 
 header h1 {
     
-    font-weight: bold;
+    font-weight: lighter;
     font-size: 36px;
-    color: var(--white);;
+    color: var(--white);
     margin: 0;
-    text-shadow: 0 0 10px rgba(109, 104, 104, 0.5);
+    text-shadow: 0 0 10px rgba(193, 201, 206, 0.5);
         
-  }
+}
 
 header a {
     text-decoration: none;
     color: var(--white);
-  }
+}
 
 header nav {
     margin: 7px 0;
@@ -55,11 +56,105 @@ header nav ul {
     justify-content: space-between;
     align-items: right;
     list-style: none;
-        }
+}
 
-    header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ABOUT ME SECTION SECTION */
+
+.aboutMe {
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.sectionTitle {
+    background-color: var(--black);
+    font-size: 36px;
+    border-right: 2px solid;
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 0 auto 0 auto;
+    width: 75%;
+}    
+
+.aboutMe h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: 30px;
+}
+.aboutMe h3 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bold;
+    text-align: left;
+    color: var(--white);
+    font-size: 30px;
+
+}
+
+.aboutMe h4 {
+    margin: 0 auto;
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bold;
+    text-align: left;
+    font-size: 27px;
+}
+
+
+.intro p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--white);
+    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+
+
+
+
+
+ 
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    } 
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+      }
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+      header nav ul li a {
+        font-size: 20px;
+      }
     }
+
