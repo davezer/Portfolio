@@ -11,7 +11,7 @@
 
 body {
     
-    color: var(--black);
+    background-color: var(--black);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 /* HEADER SECTION STYLE */
@@ -84,7 +84,7 @@ header nav ul li a {
 
 /* ABOUT ME SECTION SECTION */
 
-.aboutMe {
+.aboutMe  {
     background-color: var(--black);
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +132,7 @@ header nav ul li a {
 
 .bio {
     padding: 2px;
-    margin: -233px 692px;
+    margin: -233px 391px 82px 645px;
     display: flex;
     flex-wrap: wrap;
     color: var(--white);
@@ -146,8 +146,7 @@ header nav ul li a {
     justify-content: space-around;
     color: var(--white);
     line-height: 1;
-    width: 21%;
-    margin: -3px 150px;
+    margin: -1px 0px 0px 234px;
     text-align: left;
     
 }
@@ -164,7 +163,7 @@ header nav ul li a {
     }
 
 .projects h2 {
-    margin: 15px;
+    margin: 11px 70px 67px 1px;
     font-size: 28px;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +180,45 @@ header nav ul li a {
 
 }
 
+/* Contact Section */
 
+
+.contact {
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2px;
+    
+}
+
+.contact h3 {
+    margin: 57px 36px 1px -181px;
+    color: var(--white);
+    border-right: 2px solid;
+    padding: 1px 1px 96px 1px;
+    font-size: 30px;
+}
+
+.contactMethod {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 14px 83px 4px 90px;
+    padding: 2px;
+    
+}
+
+.contactContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 144px 0px 0 -150px;
+}
 
 
 
