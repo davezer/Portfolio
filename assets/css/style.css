@@ -181,7 +181,7 @@ header nav ul li a {
 
 }
 
-.projects img {
+.runBuddy img {
     border: 3px solid var(--white);
     display: flex;
     flex-wrap: wrap;
@@ -193,10 +193,37 @@ header nav ul li a {
     margin: 2px 10px 20px 114px;
 }
 
-.projects a {
+.runBuddy a {
     display: flex;
     flex-wrap: wrap;
     margin: 160px 218px 9px -190px;
+    justify-content: space-around;
+}
+
+.gladiatorRobots {
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.gladiatorRobots img {
+    border: 3px solid var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    height: 125px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 2px 10px 20px 114px;
+
+}
+
+.gladiatorRobots a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 159px 218px 9px -217px;
     justify-content: space-around;
 }
 
@@ -208,9 +235,9 @@ header nav ul li a {
     background-color: var(--black);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px 20px 100px 20px;
-    margin: -12px 0px 1px 38px;
+    justify-content: left;
+    padding: 9px 20px 27px 20px;
+    margin: 4px 0px 15px 194px;
     
 }
 
@@ -222,68 +249,56 @@ header nav ul li a {
     font-size: 30px;
 }
 
-.contactImg {
+.contact article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 74px 0 0 205px;
+}
+
+
+.contactMethodE, .contactMethodL, .contactMethodP {
     width: auto;
-    height: 75%;
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    padding: 2px;
     justify-content: space-around;
-    padding: 0;
 }
 
 
 
-.contactMethodE {
-    background-color: var(--black);
+
+.contactMethodE img, .contactMethodL img, .contactMethodP img {
+    width: auto;
+    height: auto;
+    margin: 0px 42px 18px 44px;
+}
+
+.contactMethodE div a   {
+    margin: 112px -32px -3px -191px;
     display: flex;
     flex-wrap: wrap;
-    margin: 14px 83px 4px 90px;
-    padding: 2px;
-    
 }
 
-.contactMethodP {
-    background-color: var(--black);
+.contactMethodP div a {
+    margin: 111px 20px -4px -149px;
     display: flex;
-    
     flex-wrap: wrap;
-    margin: 14px 83px 4px 90px;
-    padding: 2px;
-    
+
 }
 
-.contactMethodL {
-    background-color: var(--black);
+.contactMethodL div a {
+    margin: 113px -22px 0px -178px;
     display: flex;
     flex-wrap: wrap;
-    margin: 14px 83px 4px 90px;
-    padding: 2px;
-    
+
 }
 
-.contactEmail {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
-    margin: 149px -25px -25px -158px;
-}
 
-.contactPhone {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
-    margin: 149px -7px 0 -110px;
-}
 
-.contactLinkedin {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
-    margin: 0 -2px -15px -13px;
-}
+
 
 
 
@@ -348,28 +363,91 @@ header nav ul li a {
     }
 
     .contact {
+        flex: 0 60%;
+    }
+
+    .gladiatorRobots {
         width: 100%;
-        margin: 40px 33px 20px 206px;
+        margin: 0 -13px 0 136px;
     }
+
+    .gladiatorRobots a {
+        width: 100%;
+        margin: 0 0 0 -135px;
+    }
+
+    .gladiatorRobots img {
+        margin: 23px 10px 20px -130px
+    }
+
+
     
-    .contactMethodE   {
-        flex-direction: row;
-        width: 75%;   
-
-    }
-
-    .contactMethodL {
-        flex-direction: row;
-        width: 75%;
-
-    }
-    .contactMethodP {
-        flex-direction: row;
-        width: 75%;
-
-    }
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+   
+    .aboutMe {
+        width: 80%;
+        justify-content: left;
+    }
+
+    .aboutMe h2 {
+        width: 75%;
+        justify-self: left;
+    }
+
+    .sectionTitle {
+        width: 75%;
+        justify-content: left;
+    }
+
+    .aboutMe img {
+        width: 50%;
+        margin: -2px -11px 27px 25px;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 75%;
+        margin: -11px 0px 12px 49px;
+    }
+
+    .projects {
+        width: 75%;
+        justify-content: left;
+    }
+
+    .runBuddy div {
+        width: 75%;
+        justify-content: center;
+        margin: -16px 0px 0px 185px;
+    }
+
+    .runBuddy a {
+        margin: 25px 0 15px 180px;
+        width: 75%;
+        text-align: center;
+    }
+    .projects img {
+        flex: 2 35%;
+        margin: 15px 0 15px 28px;
+    }
+
+    .contact article {
+        width: 60%;
+        justify-content: left;
+        margin: 11px 4px 12px 63px
+
+        
+    }
+
+    .gladiatorRobots a {
+        margin: 31px 0px 20px 39px;
+    }
+
+}
 
 
 
