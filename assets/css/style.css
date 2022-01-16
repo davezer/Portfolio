@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 :root {
@@ -43,6 +44,7 @@ header h1 {
 }
 
 header a {
+    font-family: 'Dosis', sans-serif;
     text-decoration: none;
     color: var(--white);
 }
@@ -250,6 +252,26 @@ header nav ul li a {
 }
 
 .followTheMoney a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 153px -138px -30px -342px;
+    justify-content: space-evenly;
+}
+
+.trackend img {
+    border: 3px solid var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    height: 125px;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 2px 10px 20px 114px;
+
+}
+
+.trackend a {
     display: flex;
     flex-wrap: wrap;
     margin: 153px -138px -30px -342px;
